@@ -14,6 +14,24 @@ a {
     padding: 0;
 }
 
+h2 {
+    margin: 0;
+}
+
+.background_image{
+    background-image: url("../img/background_image.svg");
+    width: auto;
+}
+
+.page_titles {
+    margin: 0;
+    padding: 0 0.1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: blueviolet;
+}
+
 .navbar {
     background-color: blueviolet;
     display: flex;
@@ -25,12 +43,12 @@ a {
 
 .nav_title_item {
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     border-right: 1px solid #FFF;
     border-left: 1px solid #FFF;
     padding-right: 0.7rem;
-    padding-left: 0.7rem;
+    padding-left: 0.7rem;   
 }
 
 .nav_title_item:hover {
@@ -107,39 +125,74 @@ a {
 
 .content_index_item:hover {
     border: 2px solid blueviolet;
-
 }
 
 .index_subtitle_1 {
     color: blueviolet;
+    margin: 1rem 0;
 }
 
 .index_subtitle_2 {
-    color: darkorange;    
+    color: darkorange;
+    margin: 1rem 0;
 }
 
 .index_subtitle_3 {
     color: cornflowerblue;
+    margin: 1rem 0;
 
 }
 
 .index_subtitle_4 {
     color: hotpink;
     word-wrap: unset;
+    margin: 1rem 0;
 }
 /*Produtos*/
 .content_produtos {
     background-color: #F9D8E4;
 }
 
-.content_produtos_item {
-   
-}
-
 .content_produtos_item img{
     width: 10rem;
     height: 20rem;
     border: 2px solid blueviolet;
+}
+
+
+/*Depoimentos*/
+.content_depoimentos {
+    background-color: #F9D8E4;
+    padding: 1rem;
+}
+
+.content_depoimentos_item {
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    background-color: #FBE9F0;
+    color: blueviolet;
+    -webkit-box-shadow: 2px 4px 15px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 15px 2px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 15px 2px rgba(0,0,0,0.75);
+}
+
+.content_depoimentos_item p {
+    font-size: 1rem;
+    padding: 0.1rem 1rem;
+}
+
+.content_depoimentos_item_cliente {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.content_depoimentos_item_text{
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    height: 10%;
 }
 
 /*Que somos*/
