@@ -7,25 +7,51 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
 </head>
 <body>
+    <div id="navbar_menu" class="navbar_menu">
+        <div class="navbar_menu_close" onclick="closeNavBarMenu()">
+            <span>x</span>
+        </div>
+        <div class="navbar_menu_itens">
+            <div class="navbar_menu_item">
+                <a href="/index.html"><span>Início</span></a>
+            </div>
+            <div class="navbar_menu_item">
+                <a href="/quem-somos.html"><span>Quem somos</span></a>
+            </div>
+            <div class="navbar_menu_item">
+                <a href="/galeria.html"><span>Galeria</span></a>
+            </div>
+            <div class="navbar_menu_item">
+                <a href="/precos.html"><span>Preços</span></a>
+            </div>
+            <div class="navbar_menu_item">
+                <a href="#"><span>Depoimentos</span></a>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="navbar">
-            <div class="navbar_item">
-                <img class="logo" src="./img/background_image_1.svg" alt="">
+            <div class="navbar_logo">
+                <img class="logo" src="./img/background_image_1.svg" alt="Logo da empresa Dryka Decorações">
             </div>
-            <div class="navbar_title_item">
-                <a href="/index.html"><span class="nav_title_item">Início</span></a>
+            <!--Show when the display width is less than 768px-->
+            <div class="navbar_btn_menu" >
+                <img class="logo" src="./img/menu_icon.svg" alt="Imagem do botão menu" onclick="openNavBarMenu()">
             </div>
-            <div class="navbar_item">
-                <a href="/quem-somos.html"><span class="nav_title_item">Quem somos</span></a>
+            <div class="navbar_link">
+                <a href="/index.html"><span>Início</span></a>
             </div>
-            <div class="navbar_item">
-                <a href="/galeria.html"><span class="nav_title_item">Galeria</span></a>
+            <div class="navbar_link">
+                <a href="/quem-somos.html"><span>Quem somos</span></a>
             </div>
-            <div class="navbar_item">
-                <a href="/precos.html"><span class="nav_title_item">Preços</span></a>
+            <div class="navbar_link">
+                <a href="/galeria.html"><span>Galeria</span></a>
             </div>
-            <div class="navbar_item">
-                <a href="#"><span class="nav_title_item">Depoimentos</span></a> 
+            <div class="navbar_link">
+                <a href="/precos.html"><span>Preços</span></a>
+            </div>
+            <div class="navbar_link">
+                <a href="#"><span>Depoimentos</span></a> 
             </div>
         </div>
         <div id="content_depoimentos" class="content_depoimentos">
@@ -70,5 +96,6 @@
             </div>
         </div>
     </div>
+    <script src="./js/navbar.js" ></script>
 </body>
 </html>
